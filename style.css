@@ -1,0 +1,263 @@
+@font-face {
+    font-family: "quicksand";
+    src: url(quotes-generator\quicksand\Quicksand-Bold.ttf) format("truetype"),
+        url(quotes-generator\quicksand\Quicksand-Light.ttf) format("truetype"),
+        url(quotes-generator\quicksand\Quicksand-Medium.ttf) format("truetype"),
+        url(quotes-generator\quicksand\Quicksand-Regular.ttf) format("truetype"),
+        url(quotes-generator\quicksand\Quicksand-SemiBold.ttf) format("truetype");
+}
+
+#pr_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+    background-image: url(fig/sky.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: quicksand;
+}
+
+.input_box {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 15px;
+    border: 2px black solid;
+    background-color: rgb(253, 206, 224);
+    box-shadow: 6px 6px 18px black;
+    margin-bottom: 50px;
+}
+
+.output_box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 15px;
+    border: 2px black solid;
+    background-color: rgb(253, 206, 224);
+    box-shadow: 6px 6px 18px black;
+}
+
+.selectors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nb_char {
+    width: fit-content;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+label {
+    text-shadow: 2px 2px 3px white;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.label_mod {
+    font-size: 1em;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 3px 3px 2px white;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 10px;
+}
+
+#name_inputs {
+    margin-top: 20px;
+}
+
+.name {
+    width: 100px;
+    height: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.name:read-only {
+    filter: brightness(80%);
+}
+
+select {
+    border-radius: 20px;
+}
+
+::placeholder {
+    text-align: center;
+}
+
+#sub_button {
+    font-family: quicksand;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: white;
+    border: none;
+    box-shadow: 2px 2px 3px black;
+    border-radius: 20px;
+    width: 15%;
+    height: 40px;
+    margin: 20px;
+}
+
+#sub_button:hover {
+    background-color: rgb(0, 255, 0);
+    cursor: pointer;
+}
+
+#prompt {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 10px;
+    margin-top: 0;
+    margin-left: 10px;
+    line-height: 1.5;
+    text-align: start;
+}
+
+#link_p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+    text-shadow: 1px 1px 8px white;
+}
+
+#link {
+    text-decoration: none;
+    color: black;
+}
+
+#link:hover {
+    color: white;
+    text-shadow: 1px 1px 8px black;
+}
+
+#credit {
+    position: relative;
+    top: 160px;
+    font-size: 0.75em;
+    filter: opacity(75%);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media screen and (max-device-width: 480px) {
+    #pr_body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url(/fig/sky.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: quicksand;
+    }
+
+    .input_box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgb(253, 206, 224);
+        width: 90%;
+        height: auto;
+        border-radius: 15px;
+        border: 2px black solid;
+        box-shadow: 6px 6px 18px black;
+        margin-bottom: 100px;
+    }
+
+    .output_box {
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(253, 206, 224);
+        width: 90%;
+        height: auto;
+        border-radius: 15px;
+        border: 2px black solid;
+        box-shadow: 6px 6px 18px black;
+        margin-bottom: 30px;
+    }
+
+    #name_inputs {
+        margin-top: 20px;
+    }
+
+    #sub_button {
+        font-size: 1.2em;
+        height: 50px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    #prompt {
+        font-size: 1.5em;
+    }
+
+    label {
+        font-size: 2em;
+    }
+
+    .label_mod {
+        font-size: 1.5em;
+        padding: 10px;
+    }
+
+    #modpacks {
+        margin: 15px;
+    }
+
+    input[type=checkbox] {
+        transform: scale(1.5);
+    }
+
+
+    #nb_char {
+        height: 50px;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .name {
+        height: 50px;
+        font-size: 1.2em;
+    }
+
+    #link_p {
+        text-decoration: none;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: black;
+    }
+
+    #credit {
+        position: relative;
+        top: 30px;
+        margin-top: 0;
+        font-size: small;
+        filter: opacity(75%);
+        font-family: 'Times New Roman', Times, serif;
+    }
+}

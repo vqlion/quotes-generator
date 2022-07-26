@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="fig/favicon.ico">
+    <title>vql's quotes generator</title>
+</head>
+
+<body>
+    <div id="pr_body">
+        <h1>Vql's quotes generator</h1>
+        <div class="input_box">
+            <label for="nb_char">Number of characters</label>
+            <div class="selectors">
+                <select name="nbchar" id="nb_char">
+                    <option value="1">One</option>
+                    <option value="2" selected>Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                </select>
+                <div id="modpacks">
+                    <input type="checkbox" class="check_mod" name="wtsmp" id="wtsmp"> <label class="label_mod"
+                        for="wtsmp">Watisimp</label>
+                    <input type="checkbox" class="check_mod" name="bir" id="bir"> <label class="label_mod"
+                        for="bir">Bi-R</label>
+                    <input type="checkbox" class="check_mod" name="all" id="all" checked> <label class="label_mod"
+                        for="all">All</label>
+                </div>
+            </div>
+            <div id="name_inputs">
+                <input type="text" name="name_1" class="name" placeholder="Person 1">
+                <input type="text" name="name_2" class="name" placeholder="Person 2">
+                <input type="text" name="name_3" class="name" placeholder="Person 3">
+                <input type="text" name="name_4" class="name" placeholder="Person 4">
+            </div>
+            <button id="sub_button">Let's go !</button>
+        </div>
+        <div class="output_box">
+            <h2>Your prompt :</h2>
+            <p id="prompt">[...]</p>
+        </div>
+        <p id="link_p"><a id="link" href="https://vqlion.me/">Id card</a></p>
+        <p id="credit">This website was inspired by ScatterPatter's quotes generator. You can find it <a
+                href="https://incorrect-quotes-generator.neocities.org/">here</a>.</p>
+        <script type="module" src="script.js"></script>
+    </div>
+</body>
+
+</html>
