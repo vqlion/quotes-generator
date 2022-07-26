@@ -862,7 +862,7 @@
                 "text": "Bah les murs !!"
             },
             {
-                "person": 1,
+                "person": 0,
                 "text": "MAIS AUCUN RAPPORT"
             }
         ]
@@ -1285,6 +1285,22 @@
                 "integs": [
                     {
                         "value": 0,
+                        "person": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "tag": "wtsmp",
+        "quantity": 2,
+        "lines": [
+            {
+                "person": 0,
+                "text": "Oh j'ai reçu un nude de  ! Mmmh... OH DAMN !!!",
+                "integs": [
+                    {
+                        "value": 24,
                         "person": 1
                     }
                 ]
