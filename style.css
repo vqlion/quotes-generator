@@ -108,14 +108,14 @@ select {
 #sub_button {
     font-family: quicksand;
     font-weight: bold;
-    margin-bottom: 10px;
     background-color: white;
     border: none;
     box-shadow: 2px 2px 3px black;
     border-radius: 20px;
     width: 15%;
     height: 40px;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 #sub_button:hover {
@@ -146,6 +146,13 @@ select {
 #link:hover {
     color: white;
     text-shadow: 1px 1px 8px black;
+}
+
+#nb_possible {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.8em;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 #credit {
@@ -243,6 +250,13 @@ select {
     .name {
         height: 50px;
         font-size: 1.2em;
+    }
+
+    #nb_possible {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1em;
+        margin: 0;
+        margin-bottom: 10px;
     }
 
     #link_p {

@@ -5,14 +5,19 @@ const nbChar = document.getElementById("nb_char")
 
 const submitButton = document.getElementById("sub_button")
 const promptOutput = document.getElementById("prompt")
+const nbPossible = document.getElementById("nb_possible")
 
 const mods = document.getElementsByClassName("check_mod")
 
-console.log(prompts.length)
-let p = 0
-
 updateNameInputs(0)
-nbChar.addEventListener('change', updateNameInputs)
+updatePossibleNumber(0)
+nbChar.addEventListener('change', () => {
+    updateNameInputs()
+    updatePossibleNumber()
+})
+mods[0].addEventListener('change', updatePossibleNumber)
+mods[1].addEventListener('change', updatePossibleNumber)
+mods[2].addEventListener('change', updatePossibleNumber)
 submitButton.addEventListener('click', generatePrompt)
 
 function updateNameInputs(e) {
@@ -25,7 +30,24 @@ function updateNameInputs(e) {
     }
 }
 
+function updatePossibleNumber(e) {
+    let nb = parseFloat(nbChar.value)
+    let count = 0
+    for (let i = 0; i < prompts.length; i++) {
+        if(prompts[i]["quantity"] === nb && getCurrentMod() === "all") count++
+        else if(prompts[i]["quantity"] === nb && prompts[i]["tag"] === getCurrentMod()) count++
+    }
+    nbPossible.innerText = count + " possible quotes"
+}
+
+function getCurrentMod() {
+    if(mods[2].checked || (mods[0].checked && mods[1].checked) || (!mods[0].checked && !mods[1].checked && !mods[2].checked)) return "all"
+    else if (mods[0].checked) return "wtsmp"
+    else if (mods[1].checked) return "bir"
+}
+
 function testPrompts(e) {
+    let p = 0
     let names = getNamesFromInputs(4)
     promptOutput.innerText = generateText(names, p)
     console.log(p)
