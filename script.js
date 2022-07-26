@@ -1,4 +1,4 @@
-import prompts from './prompts.json' assert {type: 'json'};
+const prompts = getPrompts();
 
 const nameInputs = document.getElementsByClassName("name");
 const nbChar = document.getElementById("nb_char");
