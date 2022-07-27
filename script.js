@@ -1,4 +1,17 @@
-const prompts = getPrompts();
+let prompts = ""
+
+fetch('prompts.json')
+    .then(function (res) {
+        if (res.ok) {
+            return res.json();
+        }
+    })
+    .then(function (value) {
+        prompts = value
+        updatePossibleNumber(0)
+    })
+    .catch(function (err) {
+    });
 
 const nameInputs = document.getElementsByClassName("name");
 const nbChar = document.getElementById("nb_char");
@@ -10,7 +23,6 @@ const nbPossible = document.getElementById("nb_possible");
 const mods = document.getElementsByClassName("check_mod");
 
 updateNameInputs(0);
-updatePossibleNumber(0);
 nbChar.addEventListener('change', () => {
     updateNameInputs();
     updatePossibleNumber();
@@ -34,14 +46,14 @@ function updatePossibleNumber(e) {
     let nb = parseFloat(nbChar.value);
     let count = 0;
     for (let i = 0; i < prompts.length; i++) {
-        if(prompts[i]["quantity"] === nb && getCurrentMod() === "all") count++;
-        else if(prompts[i]["quantity"] === nb && prompts[i]["tag"] === getCurrentMod()) count++;
+        if (prompts[i]["quantity"] === nb && getCurrentMod() === "all") count++;
+        else if (prompts[i]["quantity"] === nb && prompts[i]["tag"] === getCurrentMod()) count++;
     }
     nbPossible.innerText = count + " possible quotes";
 }
 
 function getCurrentMod() {
-    if(mods[2].checked || (mods[0].checked && mods[1].checked) || (!mods[0].checked && !mods[1].checked && !mods[2].checked)) return "all";
+    if (mods[2].checked || (mods[0].checked && mods[1].checked) || (!mods[0].checked && !mods[1].checked && !mods[2].checked)) return "all";
     else if (mods[0].checked) return "wtsmp";
     else if (mods[1].checked) return "bir";
 }
