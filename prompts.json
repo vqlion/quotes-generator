@@ -157,7 +157,7 @@
         "lines": [
             {
                 "person": 0,
-                "text": "S'il neigeait du tropico l'URSS ne se serait pas effondrée !"
+                "text": "S'il neigeait du tropico l'URSS ne se serait pas effondrée"
             },
             {
                 "person": 0,
@@ -166,6 +166,42 @@
             {
                 "person": 0,
                 "text": "J'adore la théorie !! *meurt*"
+            }
+        ]
+    },
+    {
+        "tag": "bir",
+        "quantity": 1,
+        "lines": [
+            {
+                "person": 0,
+                "text": "Ca doit être terrible d'être pauvre"
+            }
+        ]
+    },
+    {
+        "tag": "bir",
+        "quantity": 1,
+        "lines": [
+            {
+                "person": 0,
+                "text": "Les caleçons c'est des parapluies de cul"
+            }
+        ]
+    },
+    {
+        "tag": "bir",
+        "quantity": 2,
+        "lines": [
+            {
+                "person": 0,
+                "text": "Payer pour se faire déboiter par  non merci",
+                "integs": [
+                    {
+                        "value": 33,
+                        "person": 1
+                    }
+                ]
             }
         ]
     },
@@ -180,6 +216,20 @@
             {
                 "person": 1,
                 "text": "Bah ta daronne"
+            }
+        ]
+    },
+    {
+        "tag": "bir",
+        "quantity": 2,
+        "lines": [
+            {
+                "person": 0,
+                "text": "Est ce que les bananes c'est comme des grosses saucisses végétales ?"
+            },
+            {
+                "person": 1,
+                "text": "Non c'est les saucisses qui sont des petites bananes de chair"
             }
         ]
     },
@@ -944,6 +994,22 @@
             {
                 "person": 0,
                 "text": "Bah apparemment... Je vais le tweeter."
+            }
+        ]
+    },
+    {
+        "tag": "bir",
+        "quantity": 2,
+        "lines": [
+            {
+                "person": 0,
+                "text": "(A ) Je jouis pour toi",
+                "integs": [
+                    {
+                        "value": 3,
+                        "person": 1
+                    }
+                ]
             }
         ]
     },
