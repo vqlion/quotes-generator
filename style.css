@@ -1,11 +1,4 @@
-@font-face {
-    font-family: "quicksand";
-    src: url(/quicksand/Quicksand-Bold.ttf) format("truetype"),
-        url(/quicksand/Quicksand-Light.ttf) format("truetype"),
-        url(/quicksand/Quicksand-Medium.ttf) format("truetype"),
-        url(/quicksand/Quicksand-Regular.ttf) format("truetype"),
-        url(/quicksand/Quicksand-SemiBold.ttf) format("truetype");
-}
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
 
 #pr_body {
     display: flex;
