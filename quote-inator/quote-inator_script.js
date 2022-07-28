@@ -2,7 +2,7 @@ let prompts = ""
 let currentQuote = 0
 
 //gets the json file containing all the prompts
-fetch('prompts.json')
+fetch('/prompts.json')
 .then(function (res) {
     if (res.ok) {
         return res.json();
