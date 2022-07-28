@@ -2,7 +2,7 @@ let prompts = ""
 let currentQuote = 0
 
 //gets the json file containing all the prompts
-fetch('quotes-generator/prompts.json')
+fetch('https://vqlion.me/quotes-generator/prompts.json')
 .then(function (res) {
     if (res.ok) {
         return res.json();
