@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="quote-inator/quote-inator_style.css" />
+    <link rel="icon" href="/fig/favicon.ico">
+    <title>vql's quotes generator</title>
+</head>
+
+<body>
+    <div id="pr_body">
+        <h1>Vql's quote-inator</h1>
+        <div class="input_box">
+            <label>Choose your mode</label>
+            <div class="selectors">
+                <div id="modpacks">
+                    <input type="checkbox" class="check_mod" name="wtsmp" id="wtsmp"> <label class="label_mod"
+                        for="wtsmp">Watisimp</label>
+                    <input type="checkbox" class="check_mod" name="bir" id="bir"> <label class="label_mod"
+                        for="bir">Bi-R</label>
+                    <input type="checkbox" class="check_mod" name="all" id="all" checked> <label class="label_mod"
+                        for="all">All</label>
+                </div>
+            </div>
+            <button id="sub_button" class="button">Random quote</button>
+            <p id="nb_possible">possible quotes</p>
+        </div>
+        <div class="input_box">
+            <h2>Your prompt :</h2>
+            <p id="prompt">[...]</p>
+        </div>
+        <div class="output_box">
+            <h2>Whomst'd've said that ?</h2>
+            <div id="name_inputs">
+                <input type="text" name="name_1" class="name" placeholder="Person 1">
+                <input type="text" name="name_2" class="name" placeholder="Person 2">
+                <input type="text" name="name_3" class="name" placeholder="Person 3">
+                <input type="text" name="name_4" class="name" placeholder="Person 4">
+            </div>
+            <div id="buttons_div">
+                <button id="valid_button" class="button">Submit names</button>
+                <button id="check_button" class="button">Show solution</button>
+            </div>
+        </div>
+        <p id="link_p"><a id="link" href="https://vqlion.me/">Id card</a></p>
+        <script src="quote-inator/quote-inator_script.js"></script>
+    </div>
+</body>
+
+</html>

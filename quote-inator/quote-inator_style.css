@@ -1,0 +1,22 @@
+.button {
+    width: auto;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#buttons_div {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#check_button {
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
