@@ -2,7 +2,7 @@ let prompts = ""
 let currentQuote = 0
 
 //gets the json file containing all the prompts
-fetch('https://vqlion.me/quotes-generator/prompts.json')
+fetch('../prompts.json')
 .then(function (res) {
     if (res.ok) {
         return res.json();
@@ -14,7 +14,6 @@ fetch('https://vqlion.me/quotes-generator/prompts.json')
 })
 .catch(function (err) {
 });
-
 
 const nameInputs = document.getElementsByClassName("name");
 
@@ -40,7 +39,7 @@ validButton.addEventListener('click', checkNames)
 function updatePossibleNumber() {
     let count = 0;
     for (let i = 0; i < prompts.length; i++) {
-        if (getCurrentMod() === "all") count++;
+        if (getCurrentMod() === "all") count++; //if the mod is 'all' the tag of the quote doesn't matter
         else if (prompts[i]["tag"] === getCurrentMod()) count++;
     }
     nbPossible.innerText = count + " possible quotes";
@@ -62,6 +61,7 @@ function updateNameInputs() {
 //gets the current mod 
 function getCurrentMod() {
     if (mods[2].checked || (mods[0].checked && mods[1].checked) || (!mods[0].checked && !mods[1].checked && !mods[2].checked)) return "all";
+    //a lot of complicated conditions to basically prevent the site from collapsing on itself
     else if (mods[0].checked) return "wtsmp";
     else if (mods[1].checked) return "bir";
 }
@@ -119,6 +119,7 @@ function checkNames() {
     if(count == prompts[currentQuote]["quantity"]) showSolution()
 }
 
+//shows the correct names for the current quote, both on the prompt and in the text areas 
 function showSolution() {
     promptOutput.innerText = generateText(prompts[currentQuote]['names'], currentQuote);
     for(let i = 0; i < prompts[currentQuote]['names'].length; i++) {
