@@ -1,4 +1,4 @@
-//gets the names from the text areas
+//gets the names from the text areas and returns them as an array
 function getNamesFromInputs(nb) {
     let temp = [];
     for (let i = 0; i < nb; i++) {
@@ -22,13 +22,13 @@ function insertIntoString(str, ins, pos) {
     return [str.slice(0, pos), ins, str.slice(pos)].join('');
 }
 
-//generates the text of the prompt
+//generates and returns the text of the prompt
 function generateText(names, rand) {
     let temp = "";
     for (let i = 0; i < prompts[rand]["lines"].length; i++) {
-        temp += names[prompts[rand]["lines"][i]["person"]] + " : ";
-        let content = prompts[rand]["lines"][i]["text"];
-        if (prompts[rand]["lines"][i].hasOwnProperty("integs")) {
+        temp += names[prompts[rand]["lines"][i]["person"]] + " : "; 
+        let content = prompts[rand]["lines"][i]["text"]; 
+        if (prompts[rand]["lines"][i].hasOwnProperty("integs")) { //checks if the quote has integrations (names inside)
             content = addIntegratedText(names, rand, content, i);
         }
         temp += content;
@@ -37,20 +37,21 @@ function generateText(names, rand) {
     return temp;
 }
 
-//adds integrated text (names inside of a quote) to the prompt's text
+//adds integrated text (names inside of a quote) to the prompt's text 
 function addIntegratedText(names, rand, content, i) {
     let offset = 0;
     for (let j = 0; j < prompts[rand]["lines"][i]["integs"].length; j++) {
         content = insertIntoString(content, names[prompts[rand]["lines"][i]["integs"][j]["person"]], prompts[rand]["lines"][i]["integs"][j]["value"] + offset);
-        offset += names[prompts[rand]["lines"][i]["integs"][j]["person"]].length; //offset is for multiple integrations 
+        //this inserts the names inside the quote. each integration has a 'value' (its position) and a 'person' (the integrated name)
+        offset += names[prompts[rand]["lines"][i]["integs"][j]["person"]].length; //offset is for multiple integrations, to compensate the characters the integration brings
     }
     return content;
 }
 
-//gets the current mod 
+//returns the current mod as a string
 function getCurrentMod() {
     if (mods[2].checked || (mods[0].checked && mods[1].checked) || (!mods[0].checked && !mods[1].checked && !mods[2].checked)) return "all";
-    //a lot of complicated conditions to basically prevent the site from collapsing on itself
+    //a lot of complicated conditions to basically prevent the app from collapsing on itself
     else if (mods[0].checked) return "wtsmp";
     else if (mods[1].checked) return "bir";
 }

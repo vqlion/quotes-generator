@@ -10,7 +10,7 @@ fetch('https://vqlion.me/quotes-generator/prompts.json')
     })
     .then(function (value) {
         prompts = value
-        updatePossibleNumber(0)
+        updatePossibleNumber()
     })
     .catch(function (err) {
     });
@@ -45,7 +45,7 @@ function updatePossibleNumber() {
     nbPossible.innerText = count + " possible quotes";
 }
 
-//updates the number of text areas you can modify based on the given number of names
+//updates the number of text areas you can modify based on the number of names in the current quote
 function updateNameInputs() {
     let nb = prompts[currentQuote]["quantity"]
     for (let i = 0; i < nameInputs.length; i++) {
@@ -67,7 +67,8 @@ function generatePrompt() {
         rand = getRandomInt(prompts.length);
         validMod = checkMod(rand);
     }
-    currentQuote = rand
+    currentQuote = rand //the current quote is stored via a global variable. 
+    //I am unsure whether this is a good solution, but it is at least viable
     promptOutput.innerText = generateText(names, rand);
 }
 
@@ -76,7 +77,7 @@ function checkNames() {
     let names = getNamesFromInputs(prompts[currentQuote]["quantity"])
     let count = 0
     for (let i = 0; i < names.length; i++) {
-        if (names[i].toUpperCase() === prompts[currentQuote]["names"][i].toUpperCase()) {
+        if (names[i].toUpperCase() === prompts[currentQuote]["names"][i].toUpperCase()) { //toUpperCase for case insensitiveness
             nameInputs[i].style.backgroundColor = '#78ff78';
             count++
         } else {

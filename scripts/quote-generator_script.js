@@ -9,7 +9,7 @@ fetch('https://vqlion.me/quotes-generator/prompts.json')
     })
     .then(function (value) {
         prompts = value
-        updatePossibleNumber(0)
+        updatePossibleNumber()
     })
     .catch(function (err) {
     });
@@ -23,7 +23,7 @@ const nbPossible = document.getElementById("nb_possible");
 
 const mods = document.getElementsByClassName("check_mod");
 
-updateNameInputs(0);
+updateNameInputs();
 nbChar.addEventListener('change', () => {
     updateNameInputs();
     updatePossibleNumber();
@@ -56,7 +56,7 @@ function updatePossibleNumber() {
     let nb = parseFloat(nbChar.value);
     let count = 0;
     for (let i = 0; i < prompts.length; i++) {
-        if (prompts[i]["quantity"] === nb && getCurrentMod() === "all") count++;
+        if (prompts[i]["quantity"] === nb && getCurrentMod() === "all") count++; //if the mod is 'all' the tag of the quote doesn't matter
         else if (prompts[i]["quantity"] === nb && prompts[i]["tag"] === getCurrentMod()) count++;
     }
     nbPossible.innerText = count + " possible quotes";
@@ -71,7 +71,8 @@ function generatePrompt() {
     while ((prompts[rand]["quantity"] != nb) || !validMod) {
         rand = getRandomInt(prompts.length);
         validMod = checkMod(rand);
-    }
+    } //this is probably not optimal, it runs through random indexes of the prompts file until it finds one that is conform with the conditions
+    //maybe I'll think of a better solution (probably involving re-organization of the prompts file) if it doesn't scale up well, for now it suffices
     shuffleArray(names);
     promptOutput.innerText = generateText(names, rand);
 }
