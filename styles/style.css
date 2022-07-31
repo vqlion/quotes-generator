@@ -163,7 +163,7 @@ select {
         justify-content: center;
         align-items: center;
         height: 100vh;
-        background-image: url(/fig/sky.jpg);
+        background-image: url(fig/sky.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         font-family: quicksand;
