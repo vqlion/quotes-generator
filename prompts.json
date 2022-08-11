@@ -315,6 +315,248 @@
         ]
     },
     {
+        "tag": "wtsmp",
+        "quantity": 3,
+        "lines": [
+            {
+                "person": 0,
+                "text": "Tiplouf attaque  !",
+                "integs": [
+                    {
+                        "value": 16,
+                        "person": 1
+                    }
+                ]
+            },
+            {
+                "person": 2,
+                "text": "Mais du coup il fait quoi ? Il chante l'hymne communiste ?"
+            }
+        ],
+        "names": [
+            "Val",
+            "Bastien",
+            "Ethan"
+        ]
+    },
+    {
+        "tag": "wtsmp",
+        "quantity": 2,
+        "lines": [
+            {
+                "person": 0,
+                "text": "On pourrait faire les couleurs du drapeau lesbienne !"
+            },
+            {
+                "person": 1,
+                "text": "T'es pas lesbienne ",
+                "integs": [
+                    {
+                        "value": 19,
+                        "person": 0
+                    }
+                ]
+            },
+            {
+                "person": 0,
+                "text": "C'est un personnage."
+            }
+        ],
+        "names": [
+            "Adam",
+            "Ethan"
+        ]
+    },
+    {
+        "tag": "wtsmp",
+        "quantity": 2,
+        "lines": [
+            {
+                "person": 0,
+                "text": "Qu'est ce qu'ils font eux la ?"
+            },
+            {
+                "person": 1,
+                "text": "Oh sur un autre ton jeune homme !"
+            },
+            {
+                "person": 0,
+                "text": "Qu'est ce qu'elle veut la grosse PUTE ?"
+            }
+        ],
+        "names": [
+            "Ethan",
+            "Val"
+        ]
+    },
+    {
+        "tag": "wtsmp",
+        "quantity": 2,
+        "lines": [
+            {
+                "person": 0,
+                "text": "What the fuck les amis ?"
+            },
+            {
+                "person": 1,
+                "text": "Feur"
+            },
+            {
+                "person": 0,
+                "text": "Oh ta gueule"
+            }
+        ],
+        "names": [
+            "Ethan",
+            "Val"
+        ]
+    },
+    {
+        "tag": "wtsmp",
+        "quantity": 2,
+        "lines": [
+            {
+                "person": 0,
+                "text": "Ca serait trop bien si on faisait un picrew de bite"
+            },
+            {
+                "person": 1,
+                "text": "Genre tu choisis la taille et tout ?"
+            },
+            {
+                "person": 0,
+                "text": "Ouais et après tu peux lui mettre un petit noeud pap'"
+            }
+        ],
+        "names": [
+            "Vermillon",
+            "Val"
+        ]
+    },
+    {
+        "tag": "wtsmp",
+        "quantity": 3,
+        "lines": [
+            {
+                "person": 0,
+                "text": "C'est laquelle la voiture de la soeur de  ?",
+                "integs":[
+                    {
+                        "person": 1,
+                        "value" : 41
+                    }
+                ]
+            },
+            {
+                "person": 2,
+                "text": "Je crois que c'est la grosse noire"
+            },
+            {
+                "person": 0,
+                "text": "Non ça c'est ma mère"
+            }
+        ],
+        "names": [
+            "Fkyro",
+            "Ethan",
+            "Val"
+        ]
+    },
+    {
+        "tag": "wtsmp",
+        "quantity": 2,
+        "lines": [
+            {
+                "person": 0,
+                "text": "Choisissez votre représentant"
+            },
+            {
+                "person": 1,
+                "text": "Personnellement j'ai envie de me faire sucer"
+            }
+        ],
+        "names": [
+            "Val",
+            "Ethan"
+        ]
+    },
+    {
+        "tag": "wtsmp",
+        "quantity": 2,
+        "lines": [
+            {
+                "person": 0,
+                "text": "Comment on appelle une petite salope ?"
+            },
+            {
+                "person": 1,
+                "text": "",
+                "integs":[
+                    {
+                        "person": 1,
+                        "value" : 0
+                    }
+                ]
+            }
+        ],
+        "names": [
+            "Ethan",
+            "Fkyro"
+        ]
+    },
+    {
+        "tag": "wtsmp",
+        "quantity": 1,
+        "lines": [
+            {
+                "person": 0,
+                "text": "Je vais me mettre tout nu dans une cave"
+            }
+        ],
+        "names": [
+            "Ethan"
+        ]
+    },
+    {
+        "tag": "wtsmp",
+        "quantity": 1,
+        "lines": [
+            {
+                "person": 0,
+                "text": "Regardez j'ai du KFC, je suis noir"
+            }
+        ],
+        "names": [
+            "Fkyro"
+        ]
+    },
+    {
+        "tag": "wtsmp",
+        "quantity": 1,
+        "lines": [
+            {
+                "person": 0,
+                "text": "Regardez je suis Harry Potter, j'ai les cheveux bleus et je suis noir !!"
+            }
+        ],
+        "names": [
+            "Fkyro"
+        ]
+    },
+    {
+        "tag": "wtsmp",
+        "quantity": 1,
+        "lines": [
+            {
+                "person": 0,
+                "text": "Google home quelle chieuse, c'est pour ça qu'elle a une voix de femme"
+            }
+        ],
+        "names": [
+            "Ethan"
+        ]
+    },
+    {
         "tag": "bir",
         "quantity": 1,
         "lines": [
