@@ -381,7 +381,7 @@
             },
             {
                 "person": 0,
-                "text": "Qu'est ce qu'elle veut la grosse PUTE ?"
+                "text": "Qu'est ce qu'iel veut la grosse PUTE ?"
             }
         ],
         "names": [
@@ -549,11 +549,279 @@
         "lines": [
             {
                 "person": 0,
+                "text": "*Se vomit dessus*"
+            },
+            {
+                "person": 0,
+                "text": "Oh c'est un petit rot ça"
+            }
+        ],
+        "names": [
+            "Ethan"
+        ]
+    },
+    {
+        "tag": "wtsmp",
+        "quantity": 1,
+        "lines": [
+            {
+                "person": 0,
                 "text": "Google home quelle chieuse, c'est pour ça qu'elle a une voix de femme"
             }
         ],
         "names": [
             "Ethan"
+        ]
+    },
+    {
+        "tag": "wtsmp",
+        "quantity": 3,
+        "lines": [
+            {
+                "person": 0,
+                "text": "C'est  ou c'est  ?",
+                "integs": [
+                    {
+                        "value": 6,
+                        "person": 1
+                    },
+                    {
+                        "value": 16,
+                        "person": 2
+                    }
+                ]
+            },
+            {
+                "person": 1,
+                "text": "C'est  haha bière pèche chapiteau alcoolisme",
+                "integs": [
+                    {
+                        "value": 6,
+                        "person": 2
+                    }
+                ]
+            }
+        ],
+        "names": [
+            "Cambyse",
+            "Fkyro",
+            "Tom"
+        ]
+    },
+    {
+        "tag": "wtsmp",
+        "quantity": 1,
+        "lines": [
+            {
+                "person": 0,
+                "text": "(Imitant le petit Gregory) Oh glouglouglou je me noie"
+            }
+        ],
+        "names": [
+            "Fkyro"
+        ]
+    },
+    {
+        "tag": "wtsmp",
+        "quantity": 1,
+        "lines": [
+            {
+                "person": 0,
+                "text": "Ed Sheeran ta grosse daronne"
+            }
+        ],
+        "names": [
+            "Linda"
+        ]
+    },
+    {
+        "tag": "wtsmp",
+        "quantity": 2,
+        "lines": [
+            {
+                "person": 0,
+                "text": "Maitre Gims joue à LOL c'est sûr"
+            },
+            {
+                "person": 1,
+                "text": "Ouais il joue Ekko"
+            }
+        ],
+        "names": [
+            "Fkyro",
+            "Christo"
+        ]
+    },
+    {
+        "tag": "wtsmp",
+        "quantity": 2,
+        "lines": [
+            {
+                "person": 0,
+                "text": "Demain je vais me bourrer la gueule !!"
+            },
+            {
+                "person": 1,
+                "text": "J'ai envie d'être mort là en fait"
+            }
+        ],
+        "names": [
+            "Linda",
+            "Ethan"
+        ]
+    },
+    {
+        "tag": "wtsmp",
+        "quantity": 2,
+        "lines": [
+            {
+                "person": 0,
+                "text": "(A ) Je t'aime, même si t'es arabe",
+                "integs": [
+                    {
+                        "value": 3,
+                        "person": 1
+                    }
+                ]
+            }
+        ],
+        "names": [
+            "Ethan",
+            "Vermillon"
+        ]
+    },
+    {
+        "tag": "wtsmp",
+        "quantity": 2,
+        "lines": [
+            {
+                "person": 0,
+                "text": "Non , allez retourne dans ton champ",
+                "integs": [
+                    {
+                        "value": 4,
+                        "person": 1
+                    }
+                ]
+            }
+        ],
+        "names": [
+            "Adam",
+            "Fkyro"
+        ]
+    },
+    {
+        "tag": "wtsmp",
+        "quantity": 3,
+        "lines": [
+            {
+                "person": 0,
+                "text": "Par contre faut arrêter de m'inviter en vacances là"
+            },
+            {
+                "person": 1,
+                "text": "Par Allah on a rien dit"
+            },
+            {
+                "person": 0,
+                "text": "... Envie de crever"
+            },
+            {
+                "person": 2,
+                "text": "Par Allah le point chaud !"
+            }
+        ],
+        "names": [
+            "Linda",
+            "Val",
+            "Ethan"
+        ]
+    },
+    {
+        "tag": "wtsmp",
+        "quantity": 1,
+        "lines": [
+            {
+                "person": 0,
+                "text": "En direct des toilettes"
+            },
+            {
+                "person": 0,
+                "text": "Je chie ma race"
+            },
+            {
+                "person": 0,
+                "text": "Brrrrrr"
+            }
+        ],
+        "names": [
+            "Tom"
+        ]
+    },
+    {
+        "tag": "wtsmp",
+        "quantity": 1,
+        "lines": [
+            {
+                "person": 0,
+                "text": "J'suis pas raciste, j'ai un ami bronzé"
+            }
+        ],
+        "names": [
+            "Tom"
+        ]
+    },
+    {
+        "tag": "wtsmp",
+        "quantity": 3,
+        "lines": [
+            {
+                "person": 0,
+                "text": "Moi je me suis fait une petite tisane là"
+            },
+            {
+                "person": 1,
+                "text": "Roooh mais l'autre il a 80 ans"
+            },
+            {
+                "person": 2,
+                "text": "Mais la pédale putain"
+            }
+        ],
+        "names": [
+            "Fkyro",
+            "Tom",
+            "Ethan"
+        ]
+    },
+    {
+        "tag": "wtsmp",
+        "quantity": 2,
+        "lines": [
+            {
+                "person": 0,
+                "text": "Mais t'as un père toi ?"
+            },
+            {
+                "person": 1,
+                "text": "Bah ouais"
+            },
+            {
+                "person": 0,
+                "text": "Mais tu le connais ?"
+            },
+            {
+                "person": 1,
+                "text": "Bah ouais pourquoi ?"
+            },
+            {
+                "person": 0,
+                "text": "Bah j'sais pas, t'es sur Twitter, t'as tes pronoms en bio tout ça..."
+            }
+        ],
+        "names": [
+            "Tom",
+            "Val"
         ]
     },
     {
@@ -1980,7 +2248,7 @@
         ]
     },
     {
-        "tag": "wtsmp",
+        "tag": "bir",
         "quantity": 1,
         "lines": [
             {
