@@ -1,269 +1,271 @@
-@import url(https://fonts.googleapis.com/css?family=Quicksand);
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
-#pr_body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 98vh;
-    background-image: url(fig/sky.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: quicksand;
+:root {
+  --gray: rgb(27, 27, 27);
+  --bg-image: url(fig/sky.jpg);
 }
 
-.input_box {
-    display: flex;
-    justify-content: start;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 15px;
-    border: 2px black solid;
-    background-color: rgb(253, 206, 224);
-    box-shadow: 6px 6px 18px black;
-    margin-bottom: 50px;
+body,
+html {
+  margin: 0;
+  padding: 0;
 }
 
-.output_box {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    width: 80%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 15px;
-    border: 2px black solid;
-    background-color: rgb(253, 206, 224);
-    box-shadow: 6px 6px 18px black;
+* {
+  box-sizing: border-box;
 }
 
-.selectors {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#nb_char {
-    width: fit-content;
-    font-size: 1em;
-    margin-bottom: 10px;
-}
-
-label {
-    text-shadow: 2px 2px 3px white;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-size: 1.2em;
-}
-
-.label_mod {
-    font-size: 1em;
+body {
+  background-image: var(--bg-image);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
-    font-family: 'Times New Roman', Times, serif;
-    text-shadow: 3px 3px 2px white;
+  font-family: "Permanent Marker", cursive;
+  display: flex;
+  justify-content: center;
 }
 
 h2 {
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    margin: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-decoration: underline wavy;
+  font-size: 1.25em;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+p {
+  margin: 0;
+}
+
+#pr_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  gap: 7vh;
+}
+
+.box {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 50vw;
+  height: fit-content;
+  border: 2px var(--gray) dashed;
+  background-color: whitesmoke;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+}
+
+.selectors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#nb_char {
+  padding: 7px;
+  width: 75px;
+  text-align: center;
+  color: black;
+  border-radius: 5px;
+  appearance: none;
+  border: none;
+  outline: none;
+  font-style: italic;
+  font-weight: 500;
+  font-family: "Ubuntu", sans-serif;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
 }
 
 #name_inputs {
-    margin-top: 20px;
+  margin: 1vh 0;
 }
 
 .name {
-    width: 100px;
-    height: 20px;
-    border-radius: 20px;
-    text-align: center;
+  padding: 7px;
+  width: 100px;
+  border-radius: 5px;
+  appearance: none;
+  border: none;
+  outline: none;
+  font-style: italic;
+  font-family: "Ubuntu", sans-serif;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
 .name:read-only {
-    filter: brightness(80%);
-}
-
-select {
-    border-radius: 20px;
+  filter: brightness(80%);
 }
 
 ::placeholder {
-    text-align: center;
+  text-align: center;
 }
 
 .button {
-    font-family: quicksand;
-    font-weight: bold;
-    background-color: white;
-    border: none;
-    box-shadow: 2px 2px 3px black;
-    border-radius: 20px;
-    width: 15%;
-    height: 40px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  width: 75px;
+  height: 35px;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 .button:hover {
-    background-color: rgb(0, 255, 0);
-    cursor: pointer;
-}
-
-#prompt {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-bottom: 10px;
-    margin-top: 0;
-    margin-left: 10px;
-    line-height: 1.5;
-    text-align: start;
-}
-
-#link_p {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: small;
-    text-shadow: 1px 1px 8px white;
-}
-
-#link {
-    text-decoration: none;
-    color: black;
-}
-
-#link:hover {
-    color: white;
-    text-shadow: 1px 1px 8px black;
+  background-color: var(--gray);
+  transition: background-color 0.5s, color 0.5s;
+  cursor: pointer;
+  color: white;
 }
 
 #nb_possible {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 0.8em;
+  font-size: 0.75em;
+}
+
+#prompt {
+  line-height: 1.5;
+  text-align: start;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0;
+}
+
+footer p {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 0.75em;
+  color: var(--gray);
+  opacity: 75%;
+  text-align: center;
+}
+
+a {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  font-style: italic;
+  color: black;
+}
+
+a:hover {
+  text-shadow: 1px 1px 1px var(--gray);
+}
+
+@media screen and (max-device-width: 480px),
+  (min-width: 768px) and (max-width: 1024px) {
+  #pr_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2.5vw;
+    height: 70vh;
+    gap: 2vh;
+  }
+
+  .box {
+    width: 90vw;
+    min-width: 90vw;
+    gap: 1vh;
+    padding: 1vh;
+  }
+
+  h1 {
+    font-size: 8vw;
+  }
+
+  h2 {
+    font-size: 4vw;
+  }
+
+  #nb_char {
+    width: fit-content;
+    height: fit-content;
+    font-size: 4vw;
+    background-color: white;
+  }
+
+  .name {
+    width: 20%;
+    font-size: 3.5vw;
+  }
+
+  #name_inputs {
     margin: 0;
-    margin-bottom: 10px;
-}
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
 
-#credit {
+  .button {
+    font-size: 4vw;
+    min-width: fit-content;
+    height: fit-content;
+    padding: 12px;
+    background-color: white;
+  }
+
+  #nb_possible {
+    text-align: center;
+    font-size: 2vw;
+  }
+
+  #prompt {
+    font-size: 1.5em;
+  }
+
+  label {
+    font-size: 3vw;
+  }
+
+  #modpacks {
+    display: flex;
+    gap: 1vh;
+    margin: 1vh 0;
+  }
+
+  input[type="checkbox"] {
+    transform: scale(2.5);
+  }
+
+
+  #link_p {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+  }
+
+  #credit {
     position: relative;
-    top: 160px;
-    font-size: 0.75em;
+    top: 30px;
+    margin-top: 0;
+    font-size: small;
     filter: opacity(75%);
-    font-family: 'Times New Roman', Times, serif;
-}
-
-@media screen and (max-device-width: 480px) {
-    #pr_body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-image: url(fig/sky.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        font-family: quicksand;
-    }
-
-    .input_box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        background-color: rgb(253, 206, 224);
-        width: 90%;
-        height: auto;
-        border-radius: 15px;
-        border: 2px black solid;
-        box-shadow: 6px 6px 18px black;
-        margin-bottom: 100px;
-    }
-
-    .output_box {
-        display: flex;
-        justify-content: space-around;
-        background-color: rgb(253, 206, 224);
-        width: 90%;
-        height: auto;
-        border-radius: 15px;
-        border: 2px black solid;
-        box-shadow: 6px 6px 18px black;
-        margin-bottom: 30px;
-    }
-
-    #name_inputs {
-        margin-top: 20px;
-    }
-
-    .button {
-        font-size: 1.2em;
-        height: 50px;
-    }
-
-    h1 {
-        font-size: 3em;
-    }
-
-    h2 {
-        font-size: 2em;
-    }
-
-    #prompt {
-        font-size: 1.5em;
-    }
-
-    label {
-        font-size: 2em;
-    }
-
-    .label_mod {
-        font-size: 1.5em;
-        padding: 10px;
-    }
-
-    #modpacks {
-        margin: 15px;
-    }
-
-    input[type=checkbox] {
-        transform: scale(1.5);
-    }
-
-    #nb_char {
-        height: 50px;
-        text-align: center;
-        font-size: 1.5em;
-    }
-
-    .name {
-        height: 50px;
-        font-size: 1.2em;
-    }
-
-    #nb_possible {
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 1em;
-        margin: 0;
-        margin-bottom: 10px;
-    }
-
-    #link_p {
-        text-decoration: none;
-        font-size: 1.5em;
-        font-weight: bold;
-        color: black;
-    }
-
-    #credit {
-        position: relative;
-        top: 30px;
-        margin-top: 0;
-        font-size: small;
-        filter: opacity(75%);
-        font-family: 'Times New Roman', Times, serif;
-    }
+    font-family: "Times New Roman", Times, serif;
+  }
 }

@@ -4,17 +4,22 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/quote-inator_style.css" />
     <link rel="icon" href="styles/fig/favicon.ico">
-    <title>vql's quote-inator</title>
+    <title>vql's quotes generator</title>
 </head>
 
 <body>
-    <h1>Vql's quote-inator</h1>
+    <h1>Vql's quotes generator</h1>
     <div id="pr_body">
         <div class="box">
-            <h2>Choose your mode</h2>
+            <h2>Number of characters</h2>
             <div class="selectors">
+                <select name="nbchar" id="nb_char">
+                    <option value="1">One</option>
+                    <option value="2" selected>Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                </select>
                 <div id="modpacks">
                     <input type="checkbox" class="check_mod" name="wtsmp" id="wtsmp"> <label class="label_mod"
                         for="wtsmp">Watisimp</label>
@@ -24,31 +29,26 @@
                         for="all">All</label>
                 </div>
             </div>
-            <button id="sub_button" class="button">Random quote</button>
-            <p id="nb_possible">possible quotes</p>
-        </div>
-        <div class="box">
-            <h2>Your prompt :</h2>
-            <p id="prompt">[...]</p>
-        </div>
-        <div class="box">
-            <h2>Whomst'd've said that ?</h2>
             <div id="name_inputs">
                 <input type="text" name="name_1" class="name" placeholder="Person 1">
                 <input type="text" name="name_2" class="name" placeholder="Person 2">
                 <input type="text" name="name_3" class="name" placeholder="Person 3">
                 <input type="text" name="name_4" class="name" placeholder="Person 4">
             </div>
-            <div id="buttons_div">
-                <button id="valid_button" class="button">Submit names</button>
-                <button id="check_button" class="button">Show solution</button>
-            </div>
+            <button id="sub_button" class="button">Let's go !</button>
+            <p id="nb_possible">possible quotes</p>
+        </div>
+        <div class="box">
+            <h2>Your prompt</h2>
+            <p id="prompt">[...]</p>
         </div>
         <footer>
-            <p>Valentin Jossic © 2022 - <a href="https://vqlion.me">vqlion.me</a></p>
+            <p>This website was inspired by ScatterPatter's quotes generator. You can find it <a
+                    href="https://incorrect-quotes-generator.neocities.org/" target="_blank">here</a>. <br>
+            Valentin Jossic © 2022 - <a href="https://vqlion.me">vqlion.me</a></p>
         </footer>
         <script src="scripts/global_function.js"></script>
-        <script src="scripts/quote-inator_script.js"></script>
+        <script src="scripts/quote-generator_script.js"></script>
     </div>
 </body>
 
