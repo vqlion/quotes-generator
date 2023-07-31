@@ -1,7 +1,7 @@
 let prompts = ""
 
 //gets the json file containing all the prompts
-fetch('https://vqlion.me/quotes-generator/prompts.json')
+fetch('https://vqlion.fr/quotes-generator/prompts.json')
     .then(function (res) {
         if (res.ok) {
             return res.json();
@@ -59,7 +59,7 @@ function updatePossibleNumber() {
         if (prompts[i]["quantity"] === nb && getCurrentMod() === "all") count++; //if the mod is 'all' the tag of the quote doesn't matter
         else if (prompts[i]["quantity"] === nb && prompts[i]["tag"] === getCurrentMod()) count++;
     }
-    nbPossible.innerText = count + " possible quotes";
+    nbPossible.innerText = count + " quotes possibles";
 }
 
 //generates a random prompt

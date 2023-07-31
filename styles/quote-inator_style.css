@@ -5,18 +5,12 @@
 
 #buttons_div {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   position: relative;
-  justify-content: center;
   align-items: center;
   width: 100%;
 }
 
-#check_button {
-  position: absolute;
-  top: 0;
-  right: 20px;
-}
 
 @media screen and (max-device-width: 480px),
   (min-width: 768px) and (max-width: 1024px) {

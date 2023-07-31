@@ -10,10 +10,9 @@
 </head>
 
 <body>
-    <h1>Vql's quote-inator</h1>
     <div id="pr_body">
         <div class="box">
-            <h2>Choose your mode</h2>
+            <h1>Choisis ton mode</h1>
             <div class="selectors">
                 <div id="modpacks">
                     <input type="checkbox" class="check_mod" name="wtsmp" id="wtsmp"> <label class="label_mod"
@@ -21,31 +20,30 @@
                     <input type="checkbox" class="check_mod" name="bir" id="bir"> <label class="label_mod"
                         for="bir">Bi-R</label>
                     <input type="checkbox" class="check_mod" name="all" id="all" checked> <label class="label_mod"
-                        for="all">All</label>
+                        for="all">Tous</label>
                 </div>
             </div>
-            <button id="sub_button" class="button">Random quote</button>
-            <p id="nb_possible">possible quotes</p>
+            <button id="sub_button" class="button">Generer</button>
+            <p id="nb_possible">quotes possibles</p>
         </div>
         <div class="box">
-            <h2>Your prompt :</h2>
             <p id="prompt">[...]</p>
         </div>
         <div class="box">
-            <h2>Whomst'd've said that ?</h2>
+            <h2>Qui a dis ça ?</h2>
             <div id="name_inputs">
-                <input type="text" name="name_1" class="name" placeholder="Person 1">
-                <input type="text" name="name_2" class="name" placeholder="Person 2">
-                <input type="text" name="name_3" class="name" placeholder="Person 3">
-                <input type="text" name="name_4" class="name" placeholder="Person 4">
+                <input type="text" name="name_1" class="name" placeholder="1">
+                <input type="text" name="name_2" class="name" placeholder="2">
+                <input type="text" name="name_3" class="name" placeholder="3">
+                <input type="text" name="name_4" class="name" placeholder="4">
             </div>
             <div id="buttons_div">
-                <button id="valid_button" class="button">Submit names</button>
-                <button id="check_button" class="button">Show solution</button>
+                <button id="valid_button" class="button">Vérifier</button>
+                <button id="check_button" class="button">Voir la solution</button>
             </div>
         </div>
         <footer>
-            <p>Valentin Jossic © 2022 - <a href="https://vqlion.me">vqlion.me</a></p>
+            <p><a href="https://vqlion.fr">vqlion.fr</a></p>
         </footer>
         <script src="scripts/global_function.js"></script>
         <script src="scripts/quote-inator_script.js"></script>
